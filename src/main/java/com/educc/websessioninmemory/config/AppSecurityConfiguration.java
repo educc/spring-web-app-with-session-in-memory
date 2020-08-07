@@ -67,9 +67,10 @@ public class AppSecurityConfiguration extends WebSecurityConfigurerAdapter {
 //        .failureHandler(authenticationFailureHandler())
         .and()
         .logout()
-        .logoutUrl("/perform_logout")
+        //.logoutUrl("/perform_logout")
         .deleteCookies("JSESSIONID");
         //.logoutSuccessHandler(logoutSuccessHandler());
+
 //    http
 //        .sessionManagement()
 //            .sessionCreationPolicy(
